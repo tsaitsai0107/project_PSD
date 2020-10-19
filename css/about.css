@@ -449,6 +449,14 @@ p,
     margin-top: 30px;
   }
 
+  .ourteam img {
+    margin-top: 30px;
+  }
+
+  .ourteam .name {
+    margin-top: 16px;
+  }
+
   #footer-top .md-mb {
     margin-bottom: 30px;
   }
@@ -475,7 +483,7 @@ p,
 
   .who .social-media i,
   #footer-top .social-media i {
-    padding-right: 40px;
+    padding-right: 30px;
     font-size: 25px;
   }
 }

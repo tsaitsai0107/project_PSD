@@ -9,17 +9,288 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+  <link rel="stylesheet" href="css/about.css">
+
+  <title>About</title>
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
+  <!-- header -->
+  <div id="header">
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <div class="logoleft">
+          <div class="logo">
+            <img src="images/logo-1.png" class="d-inline-block align-top" alt="logo" loading="lazy">
+          </div>
+          <p class="tel d-none d-sm-block">+1 (555) 333 22 11</p>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="navigation collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRODUCTS <i class="fas fa-angle-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">COLLECTIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PAGES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav justify-content-end">
+          <li class="icon-item">
+            <a class="icon-link" href="#"><img src="images/magnifier.svg" alt=""></a>
+          </li>
+          <li class="icon-item">
+            <a class="icon-link" href="#"><img src="images/heart.svg" alt=""></a>
+          </li>
+          <li class="icon-item">
+            <a class="icon-link" href="#"><img src="images/handbag.svg" alt=""></a>
+            <span class='badge badge-warning' id='lblCartCount'> 3 </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="content">
+      <h1 class="bold">ABOUT US</h1>
+      <p>Home&emsp;>&emsp;About Us</p>
+    </div>
+  </div>
+
+
+  <div id="content">
+    <div class="who">
+      <div class="container">
+        <h1>WHO WE ARE?</h1>
+        <br>
+        <br>
+        <p class="paragraph">Morbi in erat malesuada, sollicitudin massa at, tristique nisl. Maecenas id eros scelerisque, vulputate tortor quis, efficitur arcu sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Umco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+        <h6>Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem.</h6>
+        <br>
+        <p class="paragraph2">Fusce mattis nunc lacus, vulputate facilisis dui efficuitur ut. Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem. Morbi in erat malesuada, sollicitudin massa at,</p>
+        <h6>Follow Us</h6>
+        <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+        <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+        <span><a href="#"><i class="fab fa-google-plus-g"></i></a></span>
+        <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+        <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+        <span><a href="#"><i class="fab fa-whatsapp"></i></a></span>
+      </div>
+    </div>
+
+    <div class="ourteam">
+      <div class="container">
+        <h1>OUR TEAM</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile">
+              <img src="https://via.placeholder.com/280" alt="photo">
+              <div class="profile-details fadeIn-top">
+                <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+              </div>
+            </div>
+            <div class="person">
+              <div class="name">CLARA WOODEN</div>
+              <div class="title">DESIGNER</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <img src="https://via.placeholder.com/280" alt="photo">
+              <div class="profile-details fadeIn-top">
+                <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+              </div>
+            </div>
+            <div class="person">
+              <div class="name">JOHN WICK</div>
+              <div class="title">FOUNDER</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <img src="https://source.unsplash.com/280x280/?people" alt="photo">
+              <div class="profile-details fadeIn-top">
+                <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+              </div>
+            </div>
+            <div class="person">
+              <div class="name">HARRY KANE</div>
+              <div class="title">DESIGNER</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="https://via.placeholder.com/280?text=You?" alt="photo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ourworkspace">
+      <div class="container">
+        <h1>OUR WORKSPACE</h1>
+      </div>
+      <div class="sliders">
+        <img src="https://picsum.photos/1200/544" alt="First slide">
+        <img src="http://placehold.it/1200x544?text=2" alt="Second slide">
+        <img src="http://placehold.it/1200x544?text=3" alt="Third slide">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <div id="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/logo-gray.png" alt="logo" loading="lazy">
+          <p>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure</p>
+          <p><i class="fas fa-map-marker-alt"></i>&emsp;Connaught Road Central Suite 18B, 148</br>New Yankee</p>
+          <p><i class="fas fa-phone-alt"></i>&emsp;+1&nbsp;(555)&nbsp;333&nbsp;22&nbsp;11</p>
+          <p><i class="far fa-envelope"></i>&emsp;info@schon.chair</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="title">Categories</h6>
+          <ul class="common-list">
+            <li><a href="#">Chairs</a></li>
+            <li><a href="#">Sofas</a></li>
+            <li><a href="#">Living</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Tables</a></li>
+            <li><a href="#">New</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="title">Information</h6>
+          <ul class="common-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy &amp; Policy</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="title">Account</h6>
+          <ul class="common-list">
+            <li><a href="#">My Acount</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Wish List</a></li>
+            <li><a href="#">Shopping Cart</a></li>
+            <li><a href="#">Checkout</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 right-col">
+          <h6 class="title">Sign Up Newsletter</h6>
+          <p>Subscribe now to get 15% off on any product</p>
+          <div class="subscribe-email">
+            <input type="text" name="E-Mail" placeholder="Your Email">
+            <button>&#10095;</button>
+          </div>
+          <h6>Follow Us</h6>
+          <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+          <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+          <span><a href="#"><i class="fab fa-google-plus-g"></i></a></span>
+          <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+          <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+          <span><a href="#"><i class="fab fa-whatsapp"></i></a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-bottom">
+    <div class="container">
+      <p>&copy; <span>schön.</span> -All right recerved</p>
+      <span class="credit-card">
+        <span><i class="fab fa-cc-visa"></i></span>
+        <span><i class="fab fa-cc-mastercard"></i></span>
+        <span><i class="fab fa-cc-amex"></i></span>
+        <span><i class="fab fa-cc-paypal"></i></span>
+        <span><i class="fab fa-cc-stripe"></i></span>
+      </span>
+    </div>
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://kit.fontawesome.com/66ffb1fa74.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <!-- <script type="text/javascript" src="slick/sliders.js"></script> -->
+
+  <script>
+    $('.sliders').slick({
+      centerMode: true,
+      centerPadding: '110px',
+      slidesToShow: 1,
+      dots: true,
+      arrows: true,
+      customPaging: function () {
+        return '<div class="pager__item">  </div>';
+      },
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  </script>
+
+
 </body>
 
 </html>

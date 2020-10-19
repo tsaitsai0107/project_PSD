@@ -179,6 +179,7 @@ label {
 
 #content input,
 textarea {
+  padding-left: 15px;
   width: 100%;
   border: 1px solid #C5C5C5;
   font-family: lightFont, serif;
@@ -291,5 +292,7 @@ p {
 @media (max-width: 990px) {
   .navigation {
     text-align: center;
+    margin-right: 0;
+    margin-top: 30px;
   }
 }

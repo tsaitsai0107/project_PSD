@@ -48,14 +48,16 @@
 
 /* header-top */
 #header-top {
-  padding-left: 46px;
-  padding-right: 60px;
-  height: 40px;
   background-color: #282828;
 }
 
+#header-top .container {
+  padding: 0;
+  height: 40px;
+}
+
 #header-top span {
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 #header-top .header-top-left {
@@ -80,8 +82,8 @@
 }
 
 /* navigation */
-#header .navigation {
-  margin-right: 44px;
+#header .container {
+  padding: 0;
 }
 
 #header .navbar {
@@ -92,10 +94,6 @@
 #header .navbar .logoleft {
   display: flex;
   align-items: center;
-}
-
-#header .navbar .logo {
-  margin-left: 50px;
 }
 
 #header .navbar a {
@@ -386,7 +384,7 @@
 }
 
 #banner-bottom .large {
-  width: 100%;
+  width: 765px;
 }
 
 #banner-bottom .large .subtitle {
@@ -970,8 +968,7 @@ p,
 
   .navigation .cart-list,
   #banner-top .small,
-  #banner-bottom .small,
-  #tri-products {
+  #banner-bottom .small {
     display: none;
   }
 
@@ -979,10 +976,20 @@ p,
     margin-left: 0;
   }
 
+  #tri-products {
+    display: block;
+  }
+
   #bestseller .title {
     margin-top: 40px;
   }
 
+}
+
+@media (max-width: 765px) {
+  #banner-bottom .large {
+    width: 100%;
+  }
 }
 
 @media (min-width: 991px) {
@@ -1000,8 +1007,7 @@ p,
   }
 
   #header-top,
-  #banner-top .medium,
-  #tri-products {
+  #banner-top .medium {
     display: none;
   }
 
@@ -1025,6 +1031,11 @@ p,
   #banner-top .large .title,
   #banner-bottom .large .title {
     font-size: 52px;
+  }
+
+  #banner-top img,
+  #banner-bottom img {
+    margin-right: 0;
   }
 
   #footer-top .md-mb {
@@ -1091,8 +1102,8 @@ p,
     font-family: boldFont, serif;
   }
 
-  #bestseller,
-  #featured,
+  #bestseller .title,
+  #featured .title-active,
   #brands-logo,
   #footer-top .right-col {
     margin-left: 20px;

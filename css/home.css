@@ -46,11 +46,6 @@
   box-sizing: border-box;
 }
 
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
 /* header-top */
 #header-top {
   padding-left: 46px;
@@ -391,7 +386,7 @@
 }
 
 #banner-bottom .large {
-  width: 765px;
+  width: 100%;
 }
 
 #banner-bottom .large .subtitle {
@@ -973,7 +968,6 @@ p,
   }
 }
 
-/* 小於1200之後會改變的事 */
 @media (max-width: 1200px) {
 
   .navigation .cart-list,
@@ -993,7 +987,6 @@ p,
 
 }
 
-/* 最小是991，所以大於991都不行 */
 @media (min-width: 991px) {
   .navigation {
     display: flex;
@@ -1003,21 +996,37 @@ p,
 
 @media (max-width: 990px) {
 
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
   #header-top,
   #banner-top .medium,
   #tri-products {
     display: none;
   }
 
-  .navigation {
-    text-align: center;
+  #header .navigation {
+    text-align: right;
     margin-right: 0;
     margin-top: 30px;
   }
 
-  .responsive {
-    width: 100%;
-    height: auto;
+  #header .navigation .navbar-nav a {
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #banner-top .large .boldtitle,
+  #banner-bottom .large .boldtitle {
+    font-size: 44px;
+  }
+
+  #banner-top .large .title,
+  #banner-bottom .large .title {
+    font-size: 52px;
   }
 
   #footer-top .md-mb {
@@ -1055,5 +1064,47 @@ p,
   #footer-top .social-media i {
     padding-right: 30px;
     font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  #banner-top .large .description,
+  #banner-top .large .subtitle,
+  #banner-bottom .large .subtitle,
+  #banner-bottom .large .description,
+  #featured .title,
+  #footer-bottom .credit-card {
+    display: none;
+  }
+
+  #banner-bottom .large .boldtitle {
+    font-size: 28px;
+  }
+
+  #banner-bottom .large .title {
+    font-size: 20px;
+  }
+
+  #featured .title-active {
+    color: #3A3A3A;
+    font-size: 26px;
+    font-family: boldFont, serif;
+  }
+
+  #bestseller,
+  #featured,
+  #brands-logo,
+  #footer-top .right-col {
+    margin-left: 20px;
+  }
+
+  #footer-top-top .service i {
+    font-size: 24px;
+  }
+
+  #footer-top .social-media i {
+    padding-right: 20px;
   }
 }

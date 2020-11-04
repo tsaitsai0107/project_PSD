@@ -107,6 +107,10 @@ img {
   color: #313131;
 }
 
+#header .navbar a:hover {
+  opacity: 0.7;
+}
+
 #header .navbar-nav .icon-item {
   margin-left: 20px;
 }
@@ -131,7 +135,11 @@ img {
 #header .cart-list {
   padding-left: 16px;
   font-size: 11px;
-  color: #000000;
+  color: #313131;
+}
+
+#header .cart:hover {
+  text-decoration: none;
 }
 
 #header span {
@@ -179,11 +187,6 @@ img {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50px;
-}
-
-.fa-angle-down {
-  margin-top: 8px;
-  margin-left: 8px;
 }
 
 /* banner-top */
@@ -982,6 +985,11 @@ img {
   #header .navbar-nav .icon-item .cart img {
     margin-top: 16px;
     width: 11%;
+  }
+
+  .fa-angle-down {
+    margin-top: 8px;
+    margin-left: 8px;
   }
 
   #banner-top .large img {

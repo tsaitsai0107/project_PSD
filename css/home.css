@@ -100,8 +100,11 @@ img {
   align-items: center;
 }
 
-#header .navbar a {
+#header .nav-link {
   padding-right: 40px;
+}
+
+#header .navbar a {
   font-family: mediumFont, serif;
   font-size: 14px;
   color: #313131;
@@ -111,25 +114,21 @@ img {
   opacity: 0.7;
 }
 
-#header .navbar-nav .icon-item {
-  margin-left: 20px;
+#header .navbar-nav .icon-item img {
+  width: 25px;
 }
 
-#header .navbar-nav .icon-item .search img {
-  width: 95%;
-}
-
-#header .navbar-nav .icon-item .cart img {
-  width: 17%;
-}
-
-#header .navbar-nav .icon-link {
-  padding: 0;
-  font-size: 25px;
-}
-
-#header .cart {
+#header .navbar-nav .cart {
+  padding-left: 40px;
   display: flex;
+}
+
+#header .cart:hover {
+  text-decoration: none;
+}
+
+#header .navbar-nav .cart img {
+  padding-bottom: 8px;
 }
 
 #header .cart-list {
@@ -138,16 +137,11 @@ img {
   color: #313131;
 }
 
-#header .cart:hover {
-  text-decoration: none;
-}
-
 #header span {
   font-family: boldFont, serif;
 }
 
 /* content */
-
 #banner-top .large .text,
 #banner-top .medium .text-top,
 #banner-top .medium .circle,
@@ -1295,7 +1289,7 @@ img {
   #bestseller .name,
   #bestseller .price,
   #bestseller .price i {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #footer-top-top .service i {

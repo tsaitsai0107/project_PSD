@@ -1,0 +1,227 @@
+@font-face {
+  font-family: lightFont;
+  src: url(fonts/SourceSansPro-Light.ttf),
+    url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: semiBoldFont;
+  src: url(fonts/SourceSansPro-SemiBold.ttf),
+    url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: boldFont;
+  src: url(fonts/Montserrat-Bold.ttf),
+    url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: mediumFont;
+  src: url(fonts/Montserrat-Medium.ttf),
+    url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: regularFont;
+  src: url(fonts/Montserrat-Regular.ttf),
+    url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* navigation */
+
+.navigation {
+  margin-right: 45px;
+}
+
+.navbar {
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+
+.navbar .logoleft {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  margin-left: 50px;
+}
+
+.navbar .tel {
+  margin-bottom: 0;
+  margin-left: 22px;
+  font-family: boldFont, sans-serif;
+  font-size: 12px;
+  color: #535353;
+  text-align-last: left;
+}
+
+#header .navbar a {
+  font-family: mediumFont, serif;
+  font-size: 14px;
+  color: #313131;
+}
+
+#header .navbar a:hover {
+  opacity: 0.7;
+}
+
+.navbar-nav .icon-link {
+  padding: 0;
+  font-size: 25px;
+}
+
+.navbar-nav .icon-item {
+  margin-left: 20px;
+}
+
+.navbar-nav .icon-item img {
+  margin-bottom: 5px;
+}
+
+.badge {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+}
+
+#lblCartCount {
+  font-family: semiBoldFont, serif;
+  padding-top: 3px;
+  font-size: 11px;
+  text-align: center;
+  background: #535353;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-bottom: -2px;
+  margin-left: -15px;
+}
+
+.fa-align-right {
+  border: 2px solid #313131;
+  border-radius: 50%;
+  padding: 4px 6px;
+}
+
+/* jumbotron */
+.jumbotron {
+  position: relative;
+  height: 208px;
+}
+
+.jumbotron h1 {
+  z-index: 2;
+  font-family: boldFont, sans-serif;
+  font-size: 44px;
+  color: #494949;
+  text-align: center;
+}
+
+.jumbotron p {
+  z-index: 2;
+  font-family: lightFont, sans-serif;
+  font-size: 14px;
+  color: #494949;
+  text-align: center;
+}
+
+.jumbotron .fa-chevron-right {
+  font-size: 12px;
+}
+
+.jumbotron .search-block {
+  position: absolute;
+  color: #494949;
+  bottom: 3%;
+  left: 10%;
+  opacity: 0.4;
+}
+
+/* footer-top */
+#footer-top {
+  margin-top: 85px;
+  margin-bottom: 75px;
+}
+
+#footer-top .col-md-7 {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-top .title {
+  font-family: boldFont, serif;
+  font-size: 13px;
+  color: #000000;
+}
+
+#footer-top ul {
+  padding: 0;
+}
+
+#footer-top li {
+  list-style-type: none;
+}
+
+#footer-top a,
+p {
+  font-family: regularFont, serif;
+  font-size: 12px;
+  color: #8F8F8F;
+}
+
+#footer-top p {
+  text-align: right;
+}
+
+#footer-top img {
+  height: 30px;
+  width: 102px;
+  margin-bottom: 52px;
+}
+
+#footer-bottom .credit-card {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-bottom i {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #7A7A7A;
+}
+
+#footer-bottom p {
+  margin-top: 15px;
+  font-family: lightFont, serif;
+  font-size: 11px;
+  color: #8F8F8F;
+  text-align: center;
+}
+
+@media (min-width: 991px) {
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 990px) {
+  .navigation {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+}

@@ -94,7 +94,7 @@ img {
   margin-bottom: 5px;
 }
 
-.navbar-nav .icon-item:nth-child(3) img {
+.navbar-nav .icon-item img {
   width: 25px;
   height: auto;
 }
@@ -102,20 +102,13 @@ img {
 .badge {
   width: 20px;
   height: 20px;
-  border: 1px solid #ffffff;
   border-radius: 50px;
-}
-
-#lblCartCount {
+  border: 1px solid #ffffff;
+  font-size: 12px;
   font-family: semiBoldFont, serif;
-  padding-top: 3px;
-  font-size: 11px;
-  text-align: center;
-  background: #535353;
-  color: #ffffff;
-  vertical-align: bottom;
-  margin-bottom: -2px;
-  margin-left: -15px;
+  position: absolute;
+  bottom: 40px;
+  right: 52px;
 }
 
 .fa-align-right {
@@ -236,22 +229,20 @@ img {
   margin: 48px 40px 100px 40px;
 }
 
-#article .multiple-img .col-4 img:first-child {
+#article .multiple-img .col-md-4 img:first-child {
   margin-bottom: 32px
 }
 
 /* #card */
 #card .container {
+  display: flex;
   width: 78%;
   height: auto;
   background-color: #F4F4F4;
 }
 
-#card .card-image {
-  margin: 32px 36px;
-}
-
 #card img {
+  margin: 32px 36px;
   width: 164px;
   height: 164px;
 }
@@ -281,14 +272,12 @@ img {
 }
 
 /* #comments */
-#comments .container,
-#msg .container {
+#comments .container {
   margin-top: 130px;
   width: 78%;
 }
 
-#comments h4,
-#msg h4 {
+#comments h4 {
   color: #494949;
   font-size: 24px;
   font-family: boldFont, serif;
@@ -298,6 +287,10 @@ img {
   margin-bottom: 48px;
   width: 80px;
   border-bottom: 4px solid #494949;
+}
+
+#comments .comment {
+  display: flex;
 }
 
 #comments .text .name {
@@ -328,7 +321,7 @@ img {
 }
 
 #comments .card-line {
-  margin: 44px 0px 52px 96px;
+  margin: 8% 0px 10% 19%;
   width: 87%;
   border-bottom: 2px solid #EEEEEE;
 }
@@ -338,9 +331,25 @@ img {
 }
 
 /* #msg */
+#msg .container {
+  margin-top: 130px;
+  width: 78%;
+}
+
+#msg h4 {
+  margin-bottom: 40px;
+  color: #494949;
+  font-size: 24px;
+  font-family: boldFont, serif;
+}
+
+#msg .tri-input {
+  display: flex;
+}
+
 #msg input {
-  margin: 5% 2% 2% 0px;
-  padding: 2% 0px 1% 2%;
+  margin: 0px 12px 12px 0px;
+  padding: 10px 0px 6px 20px;
   width: 33%;
   font-size: 14px;
   background-color: #f7f7f7;
@@ -421,22 +430,75 @@ p {
   text-align: center;
 }
 
-@media (min-width: 991px) {
-  .navigation {
+@media (min-width: 992px) {
+  #header .navigation {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-@media (max-width: 990px) {
-  .navigation {
-    text-align: center;
+@media (max-width: 991px) {
+  #header .navigation {
+    text-align: right;
     margin-right: 0;
     margin-top: 30px;
+  }
+
+  #header .navigation .navbar-nav a {
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+  }
+
+  #header .navbar-nav .icon-item img {
+    margin-top: 16px;
+    width: 50px;
+  }
+
+  .fa-angle-down {
+    margin-top: 8px;
+    margin-left: 8px;
   }
 }
 
 @media (max-width: 768px) {
+
+  .jumbotron h1 {
+    font-size: 28px;
+  }
+
+  #article .main-article {
+    margin-top: 40px;
+    padding: 0;
+    bottom: 0;
+  }
+
+  #article .multiple-img {
+    margin: 60px 0px;
+  }
+
+  #article .multiple-img img {
+    margin-bottom: 32px
+  }
+
+  #card .container,
+  #comments .container,
+  #msg .container {
+    width: 100%;
+  }
+
+  #card .container {
+    margin-top: 100px;
+  }
+
+  #msg .tri-input {
+    display: block;
+  }
+
+  #msg input {
+    width: 98%;
+  }
 
   #footer-top .title {
     margin-bottom: 5px;
@@ -461,5 +523,15 @@ p {
 
   #footer-top .col-md-3 img {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  #card .container {
+    display: block;
+  }
+
+  #card .text {
+    padding: 0px 48px 48px;
   }
 }

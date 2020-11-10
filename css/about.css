@@ -13,8 +13,22 @@
 }
 
 @font-face {
+  font-family: SSregularFont;
+  src: url(fonts/SourceSansPro-Regular.ttf),
+    url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
   font-family: boldFont;
   src: url(fonts/Montserrat-Bold.ttf),
+    url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: mediumFont;
+  src: url(fonts/Montserrat-Medium.ttf),
     url(fonts/adobeInvisFont.ttf),
     url(fonts/MyriadPro-Regular.ttf);
 }
@@ -26,13 +40,6 @@
     url(fonts/MyriadPro-Regular.ttf);
 }
 
-/* @font-face {
-  font-family: openSemiBoldFont;
-  src: url(fonts/OpenSans-SemiBold.ttf),
-    url(fonts/adobeInvisFont.ttf),
-    url(fonts/MyriadPro-Regular.ttf);
-} */
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -41,10 +48,13 @@
 
 /* navigation */
 
+.navigation {
+  margin-right: 44px;
+}
 
 .navbar {
-  padding-top: 47px;
-  padding-bottom: 41px;
+  padding-top: 48px;
+  padding-bottom: 40px;
 }
 
 .navbar .logoleft {
@@ -53,7 +63,7 @@
 }
 
 .navbar .logo {
-  margin-left: 51px;
+  margin-left: 50px;
 }
 
 .navbar .tel {
@@ -65,15 +75,14 @@
   text-align-last: left;
 }
 
-.navbar a {
-  font-family: regularFont, sans-serif;
+#header .navbar a {
+  font-family: mediumFont, serif;
   font-size: 14px;
-  color: #494949;
+  color: #313131;
 }
 
-.navigation {
-  display: flex;
-  justify-content: flex-end;
+#header .navbar a:hover {
+  opacity: 0.7;
 }
 
 .navbar-nav .icon-link {
@@ -87,7 +96,6 @@
 
 .navbar-nav .icon-item img {
   margin-bottom: 5px;
-  /* margin-right: 55px; */
 }
 
 .badge {
@@ -96,7 +104,6 @@
   border: 1px solid #ffffff;
   border-radius: 50px;
 }
-
 
 #lblCartCount {
   font-family: semiBoldFont, serif;
@@ -110,14 +117,11 @@
   margin-left: -15px;
 }
 
-
-
 /* jumbotron */
 .jumbotron {
   position: relative;
   height: 208px;
 }
-
 
 .jumbotron h1 {
   position: relative;
@@ -137,9 +141,13 @@
   text-align: center;
 }
 
+.jumbotron .fa-chevron-right {
+  font-size: 12px;
+}
+
 /* content */
 #content {
-  margin-top: 93px;
+  margin-top: 92px;
   margin-bottom: 108px;
 }
 
@@ -317,11 +325,6 @@
   background-color: #F6F6F6;
 }
 
-#footer-top .col-md-7 {
-  display: flex;
-  justify-content: center;
-}
-
 #footer-top .second-col {
   padding-left: 60px;
 }
@@ -375,7 +378,7 @@
 #footer-top a,
 p,
 .text {
-  font-family: semiBoldFont, serif;
+  font-family: SSregularFont, serif;
   font-size: 14px;
   color: #868686;
 }

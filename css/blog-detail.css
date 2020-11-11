@@ -123,66 +123,64 @@ img {
 
 /* jumbotron */
 .jumbotron {
-  padding: 0;
-}
-
-.jumbotron .content {
-  position: relative;
+  margin-bottom: 0;
   height: 208px;
 }
 
 .jumbotron h1 {
   margin: 0 auto;
   text-align: center;
-  line-height: 208px;
   font-family: boldFont, sans-serif;
   font-size: 44px;
   color: #494949;
 }
 
-.jumbotron .subcontent {
+/* .subcontent */
+.subcontent {
+  margin-bottom: 32px;
   height: 46px;
   background-color: #eeeeee;
 }
 
-.jumbotron .subcontent .left-block,
-.jumbotron .subcontent .middle-block,
-.jumbotron .subcontent .right-block {
+.subcontent .left-block,
+.subcontent .middle-block,
+.subcontent .right-block {
   margin-top: 12px;
 }
 
-.jumbotron .subcontent .left-block {
+.subcontent .left-block {
   display: flex;
   justify-content: flex-start;
 }
 
-.jumbotron .subcontent .middle-block {
+.subcontent .middle-block {
   display: flex;
   justify-content: center;
 }
 
-.jumbotron .subcontent .right-block {
+.subcontent .right-block {
   display: flex;
   justify-content: flex-end;
 }
 
-.jumbotron .subcontent p {
+.subcontent p {
+  margin-bottom: 0;
   font-family: lightFont, sans-serif;
   font-size: 14px;
   color: #494949;
 }
 
-.jumbotron .subcontent .fa-chevron-right {
+.subcontent .fa-chevron-right {
   font-size: 12px;
 }
 
-.jumbotron .subcontent a {
+.subcontent a {
   font-family: lightFont, sans-serif;
   font-size: 14px;
   color: #494949;
 }
 
-.jumbotron .subcontent .fa-search {
+.subcontent .fa-search {
   margin-right: 20px;
 }
 
@@ -487,8 +485,22 @@ p {
 
 @media (max-width: 768px) {
 
+  .jumbotron {
+    height: auto;
+  }
+
   .jumbotron h1 {
     font-size: 28px;
+  }
+
+  .subcontent {
+    padding-bottom: 12px;
+    height: auto;
+  }
+
+  .subcontent .left-block,
+  .subcontent .right-block {
+    justify-content: center;
   }
 
   #article .main-article {

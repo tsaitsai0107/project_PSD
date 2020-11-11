@@ -81,6 +81,10 @@ img {
   opacity: 0.7;
 }
 
+#header .nav-link {
+  padding-right: 40px;
+}
+
 .navbar-nav .icon-link {
   padding: 0;
   font-size: 25px;
@@ -107,8 +111,8 @@ img {
   font-size: 12px;
   font-family: semiBoldFont, serif;
   position: absolute;
-  bottom: 40px;
-  right: 52px;
+  bottom: -4px;
+  right: -12px;
 }
 
 .fa-align-right {
@@ -128,9 +132,9 @@ img {
 }
 
 .jumbotron h1 {
-  position: absolute;
-  top: 40%;
-  left: 25%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 208px;
   font-family: boldFont, sans-serif;
   font-size: 44px;
   color: #494949;
@@ -141,14 +145,25 @@ img {
   background-color: #eeeeee;
 }
 
-.jumbotron .subcontent .container {
-  justify-content: space-between;
-}
-
 .jumbotron .subcontent .left-block,
 .jumbotron .subcontent .middle-block,
 .jumbotron .subcontent .right-block {
   margin-top: 12px;
+}
+
+.jumbotron .subcontent .left-block {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.jumbotron .subcontent .middle-block {
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron .subcontent .right-block {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .jumbotron .subcontent p {
@@ -315,14 +330,14 @@ img {
 }
 
 #comments img {
-  margin: 0px 16px 16px 16px;
+  margin: 0px 16px 16px 0px;
   height: 64px;
   width: 64px;
 }
 
 #comments .card-line {
-  margin: 8% 0px 10% 19%;
-  width: 87%;
+  margin: 8% 0px 10% 16%;
+  width: 84%;
   border-bottom: 2px solid #EEEEEE;
 }
 
@@ -438,6 +453,10 @@ p {
 }
 
 @media (max-width: 991px) {
+  #header .navbar .logo {
+    margin-left: 0;
+  }
+
   #header .navigation {
     text-align: right;
     margin-right: 0;
@@ -445,20 +464,24 @@ p {
   }
 
   #header .navigation .navbar-nav a {
-    padding-right: 40px;
+    padding-right: 0;
     display: flex;
     justify-content: flex-end;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #header .navbar-nav .icon-item img {
     margin-top: 16px;
-    width: 50px;
+    width: 36px;
   }
 
   .fa-angle-down {
     margin-top: 8px;
     margin-left: 8px;
+  }
+
+  #card .text .icon-list i {
+    margin-right: 20px;
   }
 }
 
@@ -500,6 +523,11 @@ p {
     width: 98%;
   }
 
+  #footer-top .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   #footer-top .title {
     margin-bottom: 5px;
   }
@@ -527,11 +555,19 @@ p {
 }
 
 @media (max-width: 480px) {
+  #article .main-article .tri-icon {
+    flex-direction: column;
+  }
+
   #card .container {
     display: block;
   }
 
   #card .text {
     padding: 0px 48px 48px;
+  }
+
+  #comments .comment {
+    flex-direction: column;
   }
 }

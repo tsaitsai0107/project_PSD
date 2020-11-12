@@ -39,8 +39,11 @@
   box-sizing: border-box;
 }
 
-/* navigation */
+img {
+  width: 100%;
+}
 
+/* navigation */
 .navigation {
   margin-right: 45px;
 }
@@ -78,6 +81,10 @@
   opacity: 0.7;
 }
 
+#header .nav-link {
+  padding-right: 40px;
+}
+
 .navbar-nav .icon-link {
   padding: 0;
   font-size: 25px;
@@ -91,23 +98,21 @@
   margin-bottom: 5px;
 }
 
+.navbar-nav .icon-item img {
+  width: 25px;
+  height: auto;
+}
+
 .badge {
   width: 20px;
   height: 20px;
-  border: 1px solid #ffffff;
   border-radius: 50px;
-}
-
-#lblCartCount {
+  border: 1px solid #ffffff;
+  font-size: 12px;
   font-family: semiBoldFont, serif;
-  padding-top: 3px;
-  font-size: 11px;
-  text-align: center;
-  background: #535353;
-  color: #ffffff;
-  vertical-align: bottom;
-  margin-bottom: -2px;
-  margin-left: -15px;
+  position: absolute;
+  bottom: -4px;
+  right: -12px;
 }
 
 .fa-align-right {
@@ -123,7 +128,6 @@
 }
 
 .jumbotron h1 {
-  z-index: 2;
   font-family: boldFont, sans-serif;
   font-size: 44px;
   color: #494949;
@@ -131,7 +135,6 @@
 }
 
 .jumbotron p {
-  z-index: 2;
   font-family: lightFont, sans-serif;
   font-size: 14px;
   color: #494949;
@@ -150,18 +153,146 @@
   opacity: 0.4;
 }
 
+/* #content .article-list */
+#content .article {
+  margin-top: 48px;
+  margin-bottom: 28px;
+}
+
+#content .article .date {
+  padding-left: 24px;
+  padding-top: 4px;
+  width: 80px;
+  height: 80px;
+  background-color: #919191;
+  color: #ffffff;
+}
+
+#content .article .date span {
+  font-size: 28px;
+}
+
+#content .article-text h2 {
+  margin-top: 40px;
+  font-family: boldFont, serif;
+  font-size: 30px;
+  color: #494949;
+}
+
+#content .icon-item {
+  margin-right: 24px;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: #919191;
+  font-style: italic;
+}
+
+#content .article-text .words {
+  margin-bottom: 24px;
+  font-family: lightFont, serif;
+  font-size: 14px;
+  color: #494949;
+}
+
+#content .article-text a {
+  margin-top: 40px;
+  font-family: semiBoldFont, serif;
+  font-size: 14px;
+  color: #494949;
+}
+
+.two-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-button button {
+  padding: 2px 12px;
+  color: #2B2B2B;
+  font-size: 18px;
+  font-family: semiBoldFont, serif;
+  background-color: #fff;
+}
+
+/* #content .sidebar */
+#content .sidebar {
+  margin-top: 48px;
+  text-align: right;
+}
+
+#content .sidebar .top-block,
+#content .sidebar .middle-block {
+  margin-bottom: 76px;
+}
+
+#content .sidebar h4 {
+  color: #494949;
+  font-size: 18px;
+  font-family: mediumFont, serif;
+}
+
+.h4-top-line {
+  margin-left: 84%;
+  margin-bottom: 28px;
+  border-bottom: 4px solid #494949;
+  width: 16%;
+}
+
+.h4-middle-line {
+  margin-left: 76%;
+  margin-bottom: 28px;
+  border-bottom: 4px solid #494949;
+  width: 24%;
+}
+
+.h4-bottom-line {
+  margin-left: 90%;
+  margin-bottom: 28px;
+  border-bottom: 4px solid #494949;
+  width: 10%;
+}
+
+#content .sidebar .top-block .subcategory {
+  margin-bottom: 4px;
+  color: #494949;
+  font-size: 18px;
+  font-family: lightFont, serif;
+}
+
+#content .sidebar .middle-block .post-list {
+  margin-bottom: 8px;
+}
+
+#content .sidebar .middle-block .post-img {
+  padding-right: 0;
+}
+
+#content .sidebar .middle-block .post-title {
+  color: #494949;
+  font-size: 14px;
+  font-family: lightFont, serif;
+}
+
+#content .sidebar .middle-block .post-date {
+  color: #6B6B6B;
+  font-size: 14px;
+  font-family: lightFont, serif;
+  font-style: italic;
+}
+
+#content .sidebar .bottom-block .tags {
+  color: #494949;
+  font-size: 16px;
+  font-family: lightFont, serif;
+}
+
 /* footer-top */
 #footer-top {
-  margin-top: 85px;
+  margin-top: 108px;
   margin-bottom: 75px;
 }
 
-#footer-top .col-md-7 {
-  display: flex;
-  justify-content: center;
-}
-
-#footer-top .title {
+#footer-top h6 {
   font-family: boldFont, serif;
   font-size: 13px;
   color: #000000;
@@ -182,7 +313,7 @@ p {
   color: #8F8F8F;
 }
 
-#footer-top p {
+#footer-top .col-md-3 {
   text-align: right;
 }
 
@@ -211,17 +342,137 @@ p {
   text-align: center;
 }
 
-@media (min-width: 991px) {
-  .navigation {
+@media (min-width: 992px) {
+  #header .navigation {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-@media (max-width: 990px) {
-  .navigation {
-    text-align: center;
+@media (max-width: 991px) {
+  #header .navbar .logo {
+    margin-left: 0;
+  }
+
+  #header .navigation {
+    text-align: right;
     margin-right: 0;
     margin-top: 30px;
+  }
+
+  #header .navigation .navbar-nav a {
+    padding-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+  }
+
+  #header .navbar-nav .icon-item img {
+    margin-top: 16px;
+    width: 36px;
+  }
+
+  .fa-angle-down {
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+
+  #content .sidebar {
+    text-align: left;
+  }
+
+  #content .sidebar .top-block .subcategory {
+    margin-bottom: 12px;
+  }
+
+  .h4-top-line,
+  .h4-middle-line,
+  .h4-bottom-line {
+    margin-left: 0;
+  }
+
+  #content .sidebar .middle-block .post-title {
+    font-size: 18px;
+  }
+
+  #content .sidebar .middle-block .post-date {
+    font-size: 16px;
+  }
+
+  #content .sidebar .bottom-block .tags {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 32px;
+  }
+
+  #content .article-text .words {
+    font-size: 16px;
+  }
+
+  #footer-top .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #footer-top h6 {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  #footer-top li {
+    margin-bottom: 20px;
+  }
+
+  #footer-top a,
+  #footer-top p {
+    font-size: 16px;
+  }
+
+  #footer-top .col-md-3 {
+    text-align: left;
+  }
+
+  #footer-top .col-md-3 img {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #content .article .text,
+  #content .article .tri-icon {
+    flex-direction: column;
+  }
+
+  #content .article .date {
+    padding-left: 12px;
+    padding-top: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  #content .article .date span {
+    font-size: 20px;
+  }
+
+  #content .article-text h2 {
+    margin-top: 8px;
+  }
+
+  #content .icon-item {
+    margin-bottom: 12px;
+  }
+
+  .two-button button {
+    font-size: 12px;
+  }
+
+  #content .sidebar .middle-block .post-list {
+    margin-bottom: 16px;
   }
 }

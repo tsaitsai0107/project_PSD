@@ -965,20 +965,15 @@ img {
   }
 
   #header .navigation .navbar-nav a {
-    padding-right: 40px;
+    padding-right: 0;
     display: flex;
     justify-content: flex-end;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  #header .navbar-nav .icon-item .search img {
+  #header .navbar-nav .icon-item img {
     margin-top: 16px;
-    width: 10%;
-  }
-
-  #header .navbar-nav .icon-item .cart img {
-    margin-top: 16px;
-    width: 11%;
+    width: 40px;
   }
 
   .fa-angle-down {

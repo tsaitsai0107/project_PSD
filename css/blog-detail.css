@@ -393,7 +393,7 @@ img {
   margin-bottom: 75px;
 }
 
-#footer-top .title {
+#footer-top h6 {
   font-family: boldFont, serif;
   font-size: 13px;
   color: #000000;
@@ -540,16 +540,13 @@ p {
     padding-right: 30px;
   }
 
-  #footer-top .title {
+  #footer-top h6 {
     margin-bottom: 5px;
+    font-size: 16px;
   }
 
   #footer-top li {
     margin-bottom: 20px;
-  }
-
-  #footer-top .title {
-    font-size: 20px;
   }
 
   #footer-top a,

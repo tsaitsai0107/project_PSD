@@ -409,6 +409,15 @@ p {
     font-size: 32px;
   }
 
+  #content .article .text {
+    flex-direction: column;
+  }
+
+  #content .article-text h2 {
+    margin-top: 16px;
+    font-size: 24px;
+  }
+
   #content .article-text .words {
     font-size: 16px;
   }
@@ -443,7 +452,6 @@ p {
 
 @media (max-width: 480px) {
 
-  #content .article .text,
   #content .article .tri-icon {
     flex-direction: column;
   }

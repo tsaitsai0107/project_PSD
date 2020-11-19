@@ -242,7 +242,7 @@ img {
   font-family: mediumFont, serif;
 }
 
-#banner .right-banner .count {
+#banner .right-banner .btn-secondary {
   padding: 8px 20px 8px 28px;
   font-size: 18px;
   color: #a9a9a9;
@@ -251,22 +251,10 @@ img {
   margin-right: 12px;
   background-color: #ffffff;
   border-radius: 50px;
+  border: none;
 }
 
-#banner .right-banner .arrow {
-  flex-direction: column;
-  padding-left: 12px;
-}
-
-#banner .right-banner .arrow i {
-  font-size: 12px;
-}
-
-#banner .right-banner .arrow .fa-angle-down {
-  margin: 0;
-}
-
-#banner .right-banner button {
+#banner .right-banner .cart {
   font-size: 14px;
   color: #ffffff;
   font-family: boldFont, serif;
@@ -281,28 +269,23 @@ img {
   flex-direction: column;
 }
 
-#description .tri-title {
-  justify-content: center;
-  border-bottom: 1px solid #aaaaaa;
-}
-
-#description h6 {
-  margin: 40px 12px 12px;
-  color: #171717;
+#description .nav-link {
+  margin: 60px 12px 0px;
+  color: #9b9b9b;
   font-size: 16px;
   font-family: boldFont, serif;
 }
 
-#description .title-active {
-  margin-bottom: 0;
-  border-bottom: 2px solid #171717;
+#description .active {
+  color: #171717;
 }
 
-#description .words {
-  margin-top: 52px;
+#description .tab-pane {
+  padding-top: 52px;
   color: #aaaaaa;
   font-size: 16px;
   font-family: lightFont, serif;
+  border-top: 1px solid #aaaaaa;
 }
 
 /* related */

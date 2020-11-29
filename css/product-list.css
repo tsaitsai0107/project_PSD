@@ -171,7 +171,7 @@ img {
 }
 
 .left-banner .btn-dark {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   font-family: boldFont, serif;
   background-color: #494949;
   border: none;
@@ -322,28 +322,28 @@ img {
   font-family: regularFont, serif;
 }
 
-.left-banner .hotsale .product {
+.hotsale .product {
   margin-bottom: 12px;
 }
 
-.left-banner .hotsale .product .name {
+.hotsale .product .name {
   font-size: 14px;
   color: #959596;
   font-family: regularFont, serif;
 }
 
-.left-banner .hotsale .product .star {
+.hotsale .product .star {
   font-size: 12px;
   color: #c8a760;
 }
 
-.left-banner .hotsale .product .price {
+.hotsale .product .price {
   font-size: 18px;
   color: #252528;
   font-family: regularFont, serif;
 }
 
-.left-banner .hotsale .product .deleted {
+.hotsale .product .deleted {
   font-size: 14px;
   opacity: 0.6;
   text-decoration: line-through;
@@ -371,14 +371,17 @@ img {
   font-family: lightFont, serif;
 }
 
-.right-banner .product-nav .right-nav div {
-  margin-left: 8px;
-  padding: 7px 12px 0 12px;
+.right-banner .product-nav .right-nav .btn-secondary {
+  color: #a5a5a5;
+  background-color: #fff;
   border: 1px solid #a5a5a5;
   border-radius: 50px;
 }
 
 .right-banner .product-nav .right-nav .icon-item {
+  margin-left: 8px;
+  padding: 8px 12px 0 12px;
+  border: 1px solid #a5a5a5;
   border-radius: 50%;
 }
 
@@ -450,7 +453,7 @@ img {
 .right-banner .product-details {
   position: absolute;
   bottom: 0;
-  left: 11px;
+  left: 10%;
   opacity: 0;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
@@ -709,6 +712,20 @@ img {
     margin-left: 8px;
   }
 
+  #content {
+    margin-bottom: 20px;
+  }
+
+  .hotsale {
+    margin-top: 20px;
+  }
+
+  .hotsale h6 {
+    font-size: 20px;
+    color: #494949;
+    font-family: boldFont, serif;
+  }
+
   #footer-top .md-mb {
     margin-bottom: 30px;
   }
@@ -747,7 +764,38 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .right-banner .name,
+  .right-banner .price {
+    font-size: 24px;
+  }
+
+  .right-banner .product button {
+    padding: 32px 48px;
+  }
+
+  .right-banner .product button i {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 480px) {
+  .right-banner .product-nav {
+    flex-direction: column;
+  }
+
+  .right-banner .product-nav .right-nav {
+    margin-top: 12px;
+  }
+
+  .right-banner .product button {
+    padding: 12px 28px;
+  }
+
+  .right-banner .product button i {
+    font-size: inherit;
+  }
+
   #footer-bottom .credit-card {
     display: none;
   }

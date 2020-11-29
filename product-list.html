@@ -96,11 +96,11 @@
         <div class="left-banner col-lg-3">
           <div class="two-btn d-flex">
             <button class="btn btn-dark d-lg-none" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseExample">
-              FILTER
+              <i class="fas fa-sort-amount-down"></i> FILTER
             </button>
 
             <button class="btn btn-dark d-lg-none" type="button" data-toggle="collapse" data-target="#collapseCategories" aria-expanded="false" aria-controls="collapseExample">
-              CATEGORIES
+              <i class="fas fa-sort-amount-down"></i> CATEGORIES
             </button>
           </div>
 
@@ -183,7 +183,7 @@
 
                     <div class="filter-price">
                       <div class="title">Filter by Price</div>
-                      <input id="ex3" type="text" class="span2" value="" data-slider-min="10" data-slider-max="599" data-slider-step="5" data-slider-value="[100,400]" data-slider-tooltip-split="true">
+                      <input id="filter-price" type="text" class="span2" value="" data-slider-min="10" data-slider-max="599" data-slider-step="5" data-slider-value="[100,400]" data-slider-tooltip-split="true">
                       <div class="bottom-of-filter d-flex">
                         <div class="dollar">Price&emsp;$10&emsp;-&emsp;$599</div>
                         <input type="submit" data-inline="true" value="Filter">
@@ -231,126 +231,10 @@
             </div>
           </div>
 
-          <!-- <div class="filter">
-            <div class="container">
-              <h6>FILTER</h6>
-              <div class="filter-brands">
-                <div class="title">Filter by Brands</div>
-                <form action="">
-                  <div class="brands">
-                    <div class="block d-flex">
-                      <div class="check-block">
-                        <input type="checkbox" id="brand1" name="brand1" checked>
-                        <label for="brand1">Casali
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                      <div class="number">2</div>
-                    </div>
-                    <div class="block d-flex">
-                      <div class="check-block">
-                        <input type="checkbox" id="brand2" name="brand2">
-                        <label for="brand2">Decar
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                      <div class="number">12</div>
-                    </div>
-                    <div class="block d-flex">
-                      <div class="check-block">
-                        <input type="checkbox" id="brand3" name="brand3">
-                        <label for="brand3">Fantini
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                      <div class="number">4</div>
-                    </div>
-                    <div class="block d-flex">
-                      <div class="check-block">
-                        <input type="checkbox" id="brand4" name="brand4">
-                        <label for="brand4">Flamentstyle
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                      <div class="number">4</div>
-                    </div>
-                    <div class="block d-flex">
-                      <div class="check-block">
-                        <input type="checkbox" id="brand5" name="brand5">
-                        <label for="brand5">Heerenhuis
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                      <div class="number">6</div>
-                    </div>
-                    <div class="block d-flex">
-                      <div class="check-block">
-                        <input type="checkbox" id="brand6" name="brand6">
-                        <label for="brand6">Hoffmann
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                      <div class="number">10</div>
-                    </div>
-                    <div class="block d-flex">
-                      <div class="check-block">
-                        <input type="checkbox" id="brand7" name="brand7">
-                        <label for="brand7">Italfloor
-                          <span class="checkmark"></span>
-                        </label>
-                      </div>
-                      <div class="number">3</div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-              <div class="filter-price">
-                <div class="title">Filter by Price</div>
-                <input id="ex3" type="text" class="span2" value="" data-slider-min="10" data-slider-max="599" data-slider-step="5" data-slider-value="[100,400]" data-slider-tooltip-split="true">
-                <div class="bottom-of-filter d-flex">
-                  <div class="dollar">Price&emsp;$10&emsp;-&emsp;$599</div>
-                  <input type="submit" data-inline="true" value="Filter">
-                </div>
-              </div>
-
-            </div>
-          </div> -->
-          <!-- <div class="categories">
-            <h6>CATEGORIES</h6>
-            <div class="category d-flex">
-              <div class="cate">CHAIRS</div>
-              <div class="number">12</div>
-            </div>
-            <div class="category d-flex">
-              <div class="cate">SOFAS</div>
-              <div class="number">24</div>
-            </div>
-            <div class="category d-flex">
-              <div class="cate">ARMCHAIRS</div>
-              <div class="number">9</div>
-            </div>
-            <div class="category d-flex">
-              <div class="cate">BEDROOM</div>
-              <div class="number">2</div>
-            </div>
-            <div class="category d-flex">
-              <div class="cate">LIGHTING</div>
-              <div class="number">17</div>
-            </div>
-            <div class="category d-flex">
-              <div class="cate">KITCHEN</div>
-              <div class="number">10</div>
-            </div>
-            <div class="category line-none d-flex">
-              <div class="cate">ACCESSORIES</div>
-              <div class="number">23</div>
-            </div>
-          </div> -->
-          <div class="hotsale order-2">
+          <div class="hotsale d-none d-lg-block">
             <h6>HOT SALE</h6>
             <div class="product row">
-              <div class="product-img col-4">
+              <div class="product-img">
                 <img src="https://dummyimage.com/80x80/f8f8f8/535353" alt="">
               </div>
               <div class="product-info col-8">
@@ -393,15 +277,23 @@
           </div>
         </div>
 
-        <div class="right-banner col-lg-9 order-1">
+        <div class="right-banner col-lg-9">
           <div class="product-nav d-flex">
             <div class="left-nav">
               Showing <span>1–9</span> of <span>65</span> results</br>
               View 9 / 18 / 27 / All
             </div>
             <div class="right-nav d-flex">
-              <div class="sorting">
-                Default Sorting <i class="fas fa-angle-down"></i>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Default Sorting
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Featured</a>
+                  <a class="dropdown-item" href="#">New Arrivals</a>
+                  <a class="dropdown-item" href="#">Price: Low to High</a>
+                  <a class="dropdown-item" href="#">Price: High to Low</a>
+                </div>
               </div>
               <div class="icon-item"><i class="fas fa-th-large"></i></div>
               <div class="icon-item"><i class="fas fa-th-list"></i></div>
@@ -409,7 +301,7 @@
           </div>
           <div class="products">
             <div class="first-row row">
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -426,7 +318,7 @@
                 <div class="price"><i class="fas fa-euro-sign"></i>&ensp;349,00</div>
               </div>
 
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -442,7 +334,7 @@
                 <div class="price"><i class="fas fa-euro-sign"></i>&ensp;599,00</div>
               </div>
 
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -461,7 +353,7 @@
             </div>
 
             <div class="second-row row">
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -477,7 +369,7 @@
                 <div class="price"><i class="fas fa-euro-sign"></i>&ensp;139,00</div>
               </div>
 
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -492,7 +384,7 @@
                 <div class="name">Jalis Counter stool</div>
                 <div class="price"><i class="fas fa-euro-sign"></i>&ensp;299,00</div>
               </div>
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -510,7 +402,7 @@
             </div>
 
             <div class="third-row row">
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -526,7 +418,7 @@
                 <div class="price"><i class="fas fa-euro-sign"></i>&ensp;399,00</div>
               </div>
 
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -542,7 +434,7 @@
                 <div class="price"><i class="fas fa-euro-sign"></i>&ensp;269,00</div>
               </div>
 
-              <div class="product col-4">
+              <div class="product col-md-4 col-12">
                 <div class="position-relative">
                   <div class="product-img">
                     <img src="https://dummyimage.com/275x275/f8f8f8/535353" alt="">
@@ -582,6 +474,54 @@
               </li>
             </ul>
           </nav>
+        </div>
+        <div class="hotsale d-lg-none d-xl-none">
+          <div class="container">
+            <h6>HOT SALE</h6>
+            <div class="d-flex row">
+              <div class="product col-sm-3 col-6">
+                <div class="product-img">
+                  <img src="https://dummyimage.com/80x80/f8f8f8/535353" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="name">Egon Wooden Chair</div>
+                  <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                  <span class="price deleted">$75.00</span>
+                  <span class="price">$55.00</span>
+                </div>
+              </div>
+              <div class="product col-sm-3 col-6">
+                <div class="product-img">
+                  <img src="https://dummyimage.com/80x80/f8f8f8/535353" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="name">Oyo Cantilever Chair</div>
+                  <span class="price">$95.00</span>
+                </div>
+              </div>
+              <div class="product col-sm-3 col-6">
+                <div class="product-img">
+                  <img src="https://dummyimage.com/80x80/f8f8f8/535353" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="name">Kurve Chair</div>
+                  <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                  <span class="price deleted">$65.00</span>
+                  <span class="price">$45.00</span>
+                </div>
+              </div>
+              <div class="product col-sm-3 col-6">
+                <div class="product-img">
+                  <img src="https://dummyimage.com/80x80/f8f8f8/535353" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="name">Marvelous Wooden Chair</div>
+                  <span class="price deleted">$105.00</span>
+                  <span class="price">$85.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -717,8 +657,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
 
   <script>
-    $("#ex2").slider({});
-    $("#ex3").slider({});
+    $("#filter-price").slider({});
   </script>
 
 </body>

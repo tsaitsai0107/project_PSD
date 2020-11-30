@@ -349,6 +349,10 @@ img {
   text-decoration: line-through;
 }
 
+.product-img.col-4 {
+  padding-right: 0;
+}
+
 /* #content .right-banner */
 .right-banner .product-nav {
   margin-bottom: 24px;

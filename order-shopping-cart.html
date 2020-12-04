@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/order-shopping-cart.css">
+
+  <title>Shopping-cart</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div id="header-top" class="d-flex">
+        <div class="header-top-left">
+          <div class="tel d-none d-sm-block">+1 (555) 333 22 11</div>
+        </div>
+
+        <div class="header-top-right d-flex">
+          <div class="account">Login or Create Account</div>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Language
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Español</a>
+              <a class="dropdown-item" href="#">繁體中文</a>
+              <a class="dropdown-item" href="#">한국어</a>
+              <a class="dropdown-item" href="#">日本語</a>
+              <a class="dropdown-item" href="#">Deutsch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <div class="logoleft">
+              <div class="logo">
+                <img src="images/logo-1.png" class="d-inline-block align-top" alt="logo" loading="lazy">
+              </div>
+            </div>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navigation collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">PRODUCTS <i class="fas fa-angle-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav justify-content-end">
+              <li class="icon-item">
+                <a class="icon-link" href="search.html">
+                  <img src="images/magnifier.svg" alt="">
+                </a>
+              </li>
+              <li class="icon-item">
+                <a class="icon-link" href="heart.html">
+                  <img src="images/heart.svg" alt="">
+                </a>
+              </li>
+              <li class="icon-item position-relative">
+                <a class="icon-link" href="shoppingCart.html">
+                  <img src="images/handbag.svg" alt="">
+                  <span class="badge badge-dark">3</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <h1 class="display-4">SHOPPING CART</h1>
+      <p>Home&ensp;<i class="fas fa-chevron-right"></i>&ensp;Shopping Cart</p>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="container">
+      <div class="step-wizard ">
+        <div class="position-relative">
+          <div class="stepwizard-row d-flex">
+            <div class="step">
+              <a href="#" type="button" class="btn btn-light btn-circle">01</a>
+              <p class="active">Shopping Cart</p>
+            </div>
+            <div class="step">
+              <a href="#" type="button" class="btn btn-default btn-circle" disabled="disabled">02</a>
+              <p>Check Out</p>
+            </div>
+            <div class="step">
+              <a href="#" type="button" class="btn btn-default btn-circle" disabled="disabled">03</a>
+              <p>Order Complete</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="title-list">
+          <div class="row">
+            <div class="product-list col-md-5 col-8">
+              <h5>PRODUCT</h5>
+            </div>
+            <div class="price col-md-2 col-4">
+              <h5>PRICE</h5>
+            </div>
+            <div class="quantity col-md-2 d-none d-md-block d-lg-block d-xl-block">
+              <h5>QUANTITY</h5>
+            </div>
+            <div class="total col-md-2 d-none d-md-block d-lg-block d-xl-block">
+              <h5>TOTAL</h5>
+            </div>
+            <div class="delete col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
+          </div>
+        </div>
+
+        <div class="shopping-list">
+          <div class="row">
+            <div class="product-img col-3 col-md-2">
+              <img src="https://dummyimage.com/106x106/f8f8f8/535353" alt="">
+            </div>
+            <div class="product-name col-4 col-md-3">
+              Marvelous Modern 3 Seater
+            </div>
+            <div class="price col-3 col-md-2">
+              <i class="fas fa-euro-sign"></i>&ensp;599,00
+            </div>
+            <div class="quantity col-2 col-md-2">
+              <div class="dropdown">
+                <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  1
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1</a>
+                  <a class="dropdown-item" href="#">2</a>
+                  <a class="dropdown-item" href="#">3</a>
+                  <a class="dropdown-item" href="#">4</a>
+                  <a class="dropdown-item" href="#">5</a>
+                  <a class="dropdown-item" href="#">6</a>
+                  <a class="dropdown-item" href="#">7</a>
+                  <a class="dropdown-item" href="#">8</a>
+                  <a class="dropdown-item" href="#">9</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="total offset-7 col-3 offset-md-0 col-md-2">
+              <i class="fas fa-euro-sign"></i>&ensp;599,00
+            </div>
+            <div class="delete col-2 col-md-1">
+              <button><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-list">
+          <div class="row">
+            <div class="product-img col-3 col-md-2">
+              <img src="https://dummyimage.com/106x106/f8f8f8/535353" alt="">
+            </div>
+            <div class="product-name col-4 col-md-3">
+              Marvelous Modern 3 Seater
+            </div>
+            <div class="price col-3 col-md-2">
+              <i class="fas fa-euro-sign"></i>&ensp;599,00
+            </div>
+            <div class="quantity col-2 col-md-2">
+              <div class="dropdown">
+                <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  1
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1</a>
+                  <a class="dropdown-item" href="#">2</a>
+                  <a class="dropdown-item" href="#">3</a>
+                  <a class="dropdown-item" href="#">4</a>
+                  <a class="dropdown-item" href="#">5</a>
+                  <a class="dropdown-item" href="#">6</a>
+                  <a class="dropdown-item" href="#">7</a>
+                  <a class="dropdown-item" href="#">8</a>
+                  <a class="dropdown-item" href="#">9</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="total offset-7 col-3 offset-md-0 col-md-2">
+              <i class="fas fa-euro-sign"></i>&ensp;599,00
+            </div>
+            <div class="delete col-2 col-md-1">
+              <button><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="shopping-list">
+          <div class="row">
+            <div class="product-img col-3 col-md-2">
+              <img src="https://dummyimage.com/106x106/f8f8f8/535353" alt="">
+            </div>
+            <div class="product-name col-4 col-md-3">
+              Marvelous Modern 3 Seater
+            </div>
+            <div class="price col-3 col-md-2">
+              <i class="fas fa-euro-sign"></i>&ensp;599,00
+            </div>
+            <div class="quantity col-2 col-md-2">
+              <div class="dropdown">
+                <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  1
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1</a>
+                  <a class="dropdown-item" href="#">2</a>
+                  <a class="dropdown-item" href="#">3</a>
+                  <a class="dropdown-item" href="#">4</a>
+                  <a class="dropdown-item" href="#">5</a>
+                  <a class="dropdown-item" href="#">6</a>
+                  <a class="dropdown-item" href="#">7</a>
+                  <a class="dropdown-item" href="#">8</a>
+                  <a class="dropdown-item" href="#">9</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="total offset-7 col-3 offset-md-0 col-md-2">
+              <i class="fas fa-euro-sign"></i>&ensp;599,00
+            </div>
+            <div class="delete col-2 col-md-1">
+              <button><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coupon">
+        <div class="form-inline">
+          <div class="form-group">
+            <label for="inputCoupon"></label>
+            <input type="text" class="form-control" id="inputCoupon" placeholder="Your Coupon Code">
+          </div>
+          <button type="update" class="btn btn-dark">
+            APPLY
+          </button>
+        </div>
+      </div>
+
+      <div class="shipping-cart-form">
+        <div class="row">
+          <div class="shipping-form col-12 col-md-6">
+            <form>
+              <h4>CALCULATE SHIPPING</h4>
+
+              <div class="form-group">
+                <label for="inputCountry"></label>
+                <select id="inputCountry" class="form-control">
+                  <option selected>Select Country</option>
+                  <option>Taiwan</option>
+                  <option>Japan</option>
+                  <option>Korea</option>
+                  <option>Singapore</option>
+                  <option>United State</option>
+                  <option>United Kingdom</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inputState"></label>
+                <select id="inputState" class="form-control">
+                  <option selected>State/ Province</option>
+                  <option>New York</option>
+                  <option>Kentucky</option>
+                  <option>Florida</option>
+                  <option>Ohio</option>
+                  <option>Texas</option>
+                  <option>South Dakota</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inputZip"></label>
+                <select id="inputZip" class="form-control">
+                  <option selected>Zip/ Postal Code</option>
+                  <option>10001</option>
+                  <option>10013</option>
+                  <option>45420</option>
+                  <option>10011</option>
+                  <option>30303</option>
+                  <option>11201</option>
+                </select>
+              </div>
+
+              <button type="update" class="btn btn-light">
+                UPDATE TOTAL&emsp;<i class="fas fa-sync-alt"></i>
+              </button>
+
+            </form>
+          </div>
+          <div class="cart-form col-12 col-md-6">
+            <h4>CART TOTAL</h4>
+            <div class="block">
+              <div class="top-block d-flex">
+                <h6>CART SUBTOTAL</h6>
+                <div class="price">
+                  <i class="fas fa-euro-sign"></i> 1299,00
+                </div>
+              </div>
+
+              <div class="middle-block d-flex">
+                <h6>SHIPPING</h6>
+                <div class="shipping">
+                  Free shipping
+                </div>
+              </div>
+
+              <div class="bottom-block d-flex">
+                <h6>CART TOTAL</h6>
+                <div class="price">
+                  <i class="fas fa-euro-sign"></i> 1299,00
+                </div>
+              </div>
+            </div>
+            <div class="btn-right d-flex">
+              <button type="submit" class="btn btn-dark">
+                PROCEED TO CHECKOUT <i class="fas fa-check"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- footer -->
+  <div id="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 md-mb">
+          <img src="images/logo-gray.png" alt="logo" loading="lazy">
+          <p>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure</p>
+          <div class="address">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="text">Connaught Road Central Suite 18B, 148</br>New Yankee</div>
+          </div>
+          <p><i class="fas fa-phone-alt"></i>&emsp;+1&nbsp;(555)&nbsp;333&nbsp;22&nbsp;11</p>
+          <p><i class="far fa-envelope"></i>&emsp;info@schon.chair</p>
+        </div>
+        <div class="col-lg-2 col-md-4 second-col md-mb">
+          <h6 class="title">Categories</h6>
+          <ul class="common-list">
+            <li><a href="#">Chairs</a></li>
+            <li><a href="#">Sofas</a></li>
+            <li><a href="#">Living</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Tables</a></li>
+            <li><a href="#">New</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 third-col md-mb">
+          <h6 class="title">Information</h6>
+          <ul class="common-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy &amp; Policy</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 md-mb">
+          <h6 class="title">Account</h6>
+          <ul class="common-list">
+            <li><a href="#">My Acount</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Wish List</a></li>
+            <li><a href="#">Shopping Cart</a></li>
+            <li><a href="#">Checkout</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 right-col md-mb">
+          <h6 class="title">Sign Up Newsletter</h6>
+          <p>Subscribe now to get 15% off on any product</p>
+          <div class="subscribe-email">
+            <input type="text" name="E-Mail" placeholder="Your Email">
+            <button>&#10095;</button>
+          </div>
+          <h6>Follow Us</h6>
+          <div class="social-media">
+            <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+            <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+            <span><a href="#"><i class="fab fa-google-plus-g"></i></a></span>
+            <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+            <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+            <span><a href="#"><i class="fab fa-whatsapp"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-bottom">
+    <div class="container">
+      <p>&copy; <span>schön.</span> -All right recerved</p>
+      <span class="credit-card">
+        <span><i class="fab fa-cc-visa"></i></span>
+        <span><i class="fab fa-cc-mastercard"></i></span>
+        <span><i class="fab fa-cc-amex"></i></span>
+        <span><i class="fab fa-cc-paypal"></i></span>
+        <span><i class="fab fa-cc-stripe"></i></span>
+      </span>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://kit.fontawesome.com/66ffb1fa74.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

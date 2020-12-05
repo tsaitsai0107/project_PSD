@@ -505,12 +505,8 @@ img {
   background-color: #f6f6f6;
 }
 
-#footer-top-top .col-md-2 {
-  padding: 0;
-}
-
 #footer-top-top .service {
-  display: flex;
+  margin-top: 20px;
 }
 
 #footer-top-top .service i {

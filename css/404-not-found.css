@@ -1,0 +1,68 @@
+@font-face {
+  font-family: lightFont;
+  src: url(fonts/SourceSansPro-Light.ttf), url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: semiBoldFont;
+  src: url(fonts/SourceSansPro-SemiBold.ttf), url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: SSregularFont;
+  src: url(fonts/SourceSansPro-Regular.ttf), url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: boldFont;
+  src: url(fonts/Montserrat-Bold.ttf), url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: mediumFont;
+  src: url(fonts/Montserrat-Medium.ttf), url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: regularFont;
+  src: url(fonts/Montserrat-Regular.ttf), url(fonts/adobeInvisFont.ttf),
+    url(fonts/MyriadPro-Regular.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: boldFont, serif;
+  color: #545454;
+  font-size: 100px;
+}
+
+h4 {
+  font-family: boldFont, serif;
+  color: #545454;
+  font-size: 24px;
+}
+
+p {
+  font-family: lightFont, serif;
+  color: #545454;
+  font-size: 14px;
+}
+
+button {
+  padding: 4px 12px;
+  background-color: #545454;
+  color: #ffffff;
+  font-family: boldFont, serif;
+  font-size: 12px;
+  border: none;
+}

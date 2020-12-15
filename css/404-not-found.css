@@ -40,6 +40,18 @@
   box-sizing: border-box;
 }
 
+.jumbotron {
+  margin-bottom: 0;
+  height: 100vh;
+}
+
+.jumbotron .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h1 {
   font-family: boldFont, serif;
   color: #545454;
@@ -61,8 +73,19 @@ p {
 button {
   padding: 4px 12px;
   background-color: #545454;
+  border: none;
+}
+
+button:focus {
+  outline-color: #ffffff;
+}
+
+a {
   color: #ffffff;
   font-family: boldFont, serif;
   font-size: 12px;
-  border: none;
+}
+
+a:hover {
+  color: #000000;
 }

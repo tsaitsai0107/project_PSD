@@ -372,6 +372,10 @@ img {
   color: #8a8a8a;
 }
 
+#related .product button {
+  outline-color: #535353;
+}
+
 /* footer-top */
 #footer-top {
   margin-top: 108px;

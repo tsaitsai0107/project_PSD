@@ -486,6 +486,10 @@ img {
   color: #8a8a8a;
 }
 
+.right-banner .product button:focus {
+  outline-color: #535353;
+}
+
 .right-banner .pagination .page-link {
   color: #bababa;
   background-color: #f6f6f6;

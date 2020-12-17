@@ -41,9 +41,81 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">HOME</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="products.html">PRODUCTS <i class="fas fa-angle-down"></i></a>
+          <li class="nav-item dropdown-menu-big">
+            <a class="nav-link" href="products.html" id="dropdownMenu-menu-big" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS <i class="fas fa-angle-down"></i></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu-menu-big">
+              <div class="menu-big-container">
+                <div class="row">
+                  <div class="col">
+                    <div class="title">SOFAS & ARMCHAIRS</div>
+                    <ul>
+                      <li><a href="#">Sofas</a></li>
+                      <li><a href="#">Armchairs</a></li>
+                      <li><a href="#">Poufs</a></li>
+                      <li><a href="#">Footstools</a></li>
+                      <li><a href="#">Lounge Chairs</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <div class="title">TABLES & CHAIRS</div>
+                    <ul>
+                      <li><a href="#">Chairs</a></li>
+                      <li><a href="#">Stools</a></li>
+                      <li><a href="#">Benches</a></li>
+                      <li><a href="#">Coffe Tables</a></li>
+                      <li><a href="#">Console Tables</a></li>
+                      <li><a href="#">Secretary Desks</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <div class="title">KITCHEN FURNITURE</div>
+                    <ul>
+                      <li><a href="#">Kitchen Taps</a></li>
+                      <li><a href="#">Breakfast time</a></li>
+                      <li><a href="#">Cooking</a></li>
+                      <li><a href="#">Food Storage Boxes</a></li>
+                      <li><a href="#">Spice Jars</a></li>
+                      <li><a href="#">Napkins</a></li>
+                      <li><a href="#">Oven Gloves</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col mr-n5">
+                    <div class="title">OFFICE</div>
+                    <ul>
+                      <li><a href="#">Office Desks</a></li>
+                      <li><a href="#">Meeting Tables</a></li>
+                      <li><a href="#">Task Chairs</a></li>
+                    </ul>
+                  </div>
+                  <div class="col ml-n5 mr-n5">
+                    <div class="title">LIGHTING</div>
+                    <ul>
+                      <li><a href=" #">Floor Lamps</a>
+                      </li>
+                      <li><a href="#">Wall Lamps</a></li>
+                      <li><a href="#">Ceiling Lamps</a></li>
+                      <li><a href="#">Table Lamps</a></li>
+                      <li><a href="#">Spotlight</a></li>
+                      <li><a href="#">Light Letters</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="bottom row">
+                  <div class="bottom-left col-6">
+                    <div class="name">SOFAS</div>
+                    <div class="text">50% OFF</div>
+                  </div>
+                  <div class="bottom-right col-5">
+                    <div class="name">TOTEM FLOOR LAMP</div>
+                    <p>SHOP NOW</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="blog.html">BLOG</a>
           </li>
@@ -56,21 +128,120 @@
         </ul>
 
         <ul class="navbar-nav justify-content-end">
-          <li class="icon-item">
-            <a class="icon-link" href="search.html">
+          <li class="icon-item dropdown-search">
+            <a class="icon-link" href="#" role="button" id="dropdown-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="images/magnifier.svg" alt="">
             </a>
+            <div class="dropdown-menu " aria-labelledby="dropdown-search">
+              <div class="search-container">
+                <div class="search-block d-flex">
+                  <input type="text" placeholder="Search...">
+                  <div class="search-icon">
+                    <i class="fas fa-microphone"></i>
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+                <div class="delete-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="icon-item">
             <a class="icon-link" href="heart.html">
               <img src="images/heart.svg" alt="">
             </a>
           </li>
-          <li class="icon-item position-relative">
-            <a class="icon-link" href="shoppingCart.html">
-              <img src="images/handbag.svg" alt="">
-              <span class="badge badge-dark">3</span>
+          <li class="icon-item dropdown-shopping-cart">
+            <a class="icon-link" href="#" id="dropdown-shopping-cart" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+              <div class="shopping-cart-with-number  position-relative">
+                <img src="images/handbag.svg" alt="">
+                <span class="badge badge-dark">3</span>
+              </div>
             </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-shopping-cart">
+              <div class="shopping-cart-container">
+                <div class="product row">
+                  <div class="col-3">
+                    <a href="product-detail.html">
+                      <img src="https://dummyimage.com/74x74/f8f8f8/535353" alt="">
+                    </a>
+                  </div>
+                  <div class="col-7">
+                    <a href="product-detail.html">
+                      <div class="name">
+                        Marvelous Modern 3 Seater
+                      </div>
+                      <div class="price">
+                        <i class="fas fa-euro-sign"></i>&ensp;599,00
+                      </div>
+                      <div class="qty">
+                        Qty: 1
+                      </div>
+                    </a>
+                  </div>
+                  <div class="delete-btn col-2">
+                    <button><i class="fas fa-times"></i></button>
+                  </div>
+                </div>
+                <div class="product row">
+                  <div class="col-3">
+                    <a href="product-detail.html">
+                      <img src="https://dummyimage.com/74x74/f8f8f8/535353" alt="">
+                    </a>
+                  </div>
+                  <div class="col-7">
+                    <a href="product-detail.html">
+                      <div class="name">
+                        Marvelous Modern 3 Seater
+                      </div>
+                      <div class="price">
+                        <i class="fas fa-euro-sign"></i>&ensp;599,00
+                      </div>
+                      <div class="qty">
+                        Qty: 1
+                      </div>
+                    </a>
+                  </div>
+                  <div class="delete-btn col-2">
+                    <button><i class="fas fa-times"></i></button>
+                  </div>
+                </div>
+                <div class="product row">
+                  <div class="col-3">
+                    <a href="product-detail.html">
+                      <img src="https://dummyimage.com/74x74/f8f8f8/535353" alt="">
+                    </a>
+                  </div>
+                  <div class="col-7">
+                    <a href="product-detail.html">
+                      <div class="name">
+                        Marvelous Modern 3 Seater
+                      </div>
+                      <div class="price">
+                        <i class="fas fa-euro-sign"></i>&ensp;599,00
+                      </div>
+                      <div class="qty">
+                        Qty: 1
+                      </div>
+                    </a>
+                  </div>
+                  <div class="delete-btn col-2">
+                    <button><i class="fas fa-times"></i></button>
+                  </div>
+
+                </div>
+                <div class="total d-flex">
+                  <div class="title">Sub Total</div>
+                  <div class="total-price"><i class="fas fa-euro-sign"></i>&ensp;1797,00</div>
+                </div>
+                <div class="bottom-btn d-flex">
+                  <a type="button" class="btn btn-light" href="order-shopping-cart.html">VIEW CART</a>
+                  <a type="button" class="btn btn-dark" href="order-checkout.html">CHECKOUT</a>
+                </div>
+              </div>
+            </div>
+
           </li>
         </ul>
       </div>
@@ -265,39 +436,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 
+  <script src="js/dropdown-shopping-cart.js"></script>
+  <script src="js/about-slick.js"></script>
 
-  <script>
-    $('.sliders').slick({
-      centerMode: true,
-      centerPadding: '110px',
-      slidesToShow: 1,
-      dots: true,
-      arrows: true,
-      customPaging: function () {
-        return '<div class="pager__item">  </div>';
-      },
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-  </script>
 </body>
 
 </html>

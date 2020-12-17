@@ -489,7 +489,7 @@ p,
 }
 
 .dropdown-menu-big .bottom-left {
-  background-image: url(/images/hover-product-left.png);
+  background-image: url(../images/hover-product-left.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -513,7 +513,7 @@ p,
 }
 
 .dropdown-menu-big .bottom-right {
-  background-image: url(/images/hover-product-right.png);
+  background-image: url(../images/hover-product-right.png);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;

@@ -91,6 +91,7 @@ img {
   font-size: 25px;
 }
 
+.navbar-nav .nav-link:focus,
 .navbar-nav .icon-link:focus {
   outline: none;
 }
@@ -831,7 +832,7 @@ p,
 
 @media (max-width: 576px) {
   .dropdown-shopping-cart .shopping-cart-container {
-    padding: 60px 0px;
+    padding: 60px 15px;
   }
 
   .dropdown-menu-big .menu-big-container {

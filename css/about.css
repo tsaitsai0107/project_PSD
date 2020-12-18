@@ -91,8 +91,8 @@ img {
   font-size: 25px;
 }
 
-.navbar-nav .icon-item {
-  margin-left: 20px;
+.navbar-nav .icon-link:focus {
+  outline: none;
 }
 
 .navbar-nav .icon-item img {
@@ -447,11 +447,16 @@ p,
   margin-top: 0;
   padding: 0;
   border: none;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* dropdown-menu-big */
+.dropdown-menu-big .nav-link {
+  -webkit-appearance: none;
+}
+
 .dropdown-menu-big .dropdown-menu {
-  width: 90%;
+  width: 100%;
 }
 
 .dropdown-menu-big .menu-big-container {
@@ -486,6 +491,10 @@ p,
 .dropdown-menu-big li a {
   font-family: lightFont, serif;
   color: #757575;
+}
+
+.dropdown-menu-big .bottom {
+  margin-top: 60px;
 }
 
 .dropdown-menu-big .bottom-left {
@@ -531,15 +540,6 @@ p,
   color: #979797;
   font-family: mediumFont, serif;
   font-size: 14px;
-}
-
-.dropdown-menu-big .dropdown-menu {
-  display: none;
-}
-
-.dropdown-menu-big:hover .dropdown-menu {
-  display: block;
-  top: 86px;
 }
 
 /* search */
@@ -662,6 +662,19 @@ p,
     justify-content: flex-end;
   }
 
+  .navbar-nav .icon-item {
+    margin-left: 20px;
+  }
+
+  .dropdown-menu-big .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu-big:hover .dropdown-menu {
+    display: block;
+    top: 86px;
+  }
+
   .dropdown-shopping-cart .dropdown-menu {
     display: none;
   }
@@ -747,6 +760,42 @@ p,
     width: 100%;
   }
 
+  .dropdown-menu-big .row {
+    flex-direction: column;
+  }
+
+  .dropdown-menu-big .title {
+    font-size: 22px;
+  }
+
+  .dropdown-menu-big .title:after {
+    top: 32px;
+  }
+
+  .dropdown-menu-big li {
+    margin-bottom: 16px;
+  }
+
+  .dropdown-menu-big li:last-child {
+    margin-bottom: 40px;
+  }
+
+  .dropdown-menu-big ul {
+    display: none;
+  }
+
+  .dropdown-menu-big .title:hover ~ ul {
+    display: block;
+  }
+
+  .dropdown-search .search-container {
+    background-color: #ffffff;
+  }
+
+  .dropdown-search .search-block {
+    font-size: 32px;
+  }
+
   .dropdown-shopping-cart .name,
   .dropdown-shopping-cart .qty,
   .dropdown-shopping-cart .total .title,
@@ -758,11 +807,6 @@ p,
   .dropdown-shopping-cart .price i,
   .dropdown-shopping-cart .total .total-price i {
     font-size: 22px;
-  }
-
-  .dropdown-shopping-cart .col-7,
-  .dropdown-shopping-cart .col-2 {
-    /* padding-top: 28px; */
   }
 
   .dropdown-shopping-cart .delete-btn i {
@@ -789,9 +833,17 @@ p,
   .dropdown-shopping-cart .shopping-cart-container {
     padding: 60px 0px;
   }
+
+  .dropdown-menu-big .menu-big-container {
+    padding: 36px 0px 36px 32px;
+  }
 }
 
 @media (max-width: 480px) {
+  .dropdown-search .search-block {
+    font-size: 24px;
+  }
+
   #header .dropdown-shopping-cart .bottom-btn a {
     font-size: 16px;
   }

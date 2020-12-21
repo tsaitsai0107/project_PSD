@@ -868,6 +868,70 @@ img {
   color: #000000;
 }
 
+/* popup */
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 16px 40px;
+  background-image: url(/images/popup-chair.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.modal-body h1 {
+  font-family: boldFont, serif;
+  letter-spacing: 4px;
+  font-size: 72px;
+  opacity: 0.05;
+  position: absolute;
+  top: -16px;
+  left: 28px;
+}
+
+.modal-body h2 {
+  font-family: boldFont, serif;
+}
+
+.modal-body p {
+  color: #757575;
+  font-family: SSregularFont, serif;
+  font-size: 18px;
+}
+
+.modal-body span {
+  color: #f53434;
+}
+
+.modal-body input {
+  margin-bottom: 8px;
+  margin-left: 0;
+  padding: 8px 220px 8px 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 30px;
+  font-size: 12px;
+  font-family: SSregularFont, serif;
+}
+
+.modal-body button {
+  margin-bottom: 76px;
+  display: block;
+  background-color: #ff8283;
+  border: none;
+  border-radius: 30px;
+  font-size: 12px;
+  font-family: semiBoldFont, serif;
+  letter-spacing: 2px;
+}
+
+.modal-body label {
+  margin-left: 20px;
+  color: #9a9a9a;
+  font-size: 12px;
+}
+
 /* mediaquery */
 @media (min-width: 1200px) {
   .container {
@@ -1117,6 +1181,10 @@ img {
     padding-right: 30px;
     font-size: 25px;
   }
+
+  .modal-body h1 {
+    font-size: 62px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1296,5 +1364,17 @@ img {
 
   #tri-products .fa-chevron-right {
     margin-top: 0;
+  }
+
+  .modal-body h1 {
+    font-size: 36px;
+  }
+
+  .modal-body {
+    background-position: center;
+  }
+
+  .modal-body input {
+    padding: 8px 100px 8px 20px;
   }
 }

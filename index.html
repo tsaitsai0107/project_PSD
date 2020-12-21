@@ -70,7 +70,7 @@
             </li>
           </ul>
 
-          <ul class="navbar-nav justify-content-end">
+          <ul class="navbar-nav">
             <li class="icon-item">
               <a class="icon-link search" href="search.html"><img src="images/magnifier.svg" alt=""></a>
             </li>
@@ -529,6 +529,34 @@
     </div>
   </div>
 
+  <!-- popup -->
+  <div class="modal" id="Modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <h1>NEWLETTER</h1>
+            <h2>JOIN OUR NEWSLETTER</h2>
+            <p>Subscribe now to get <span>15%</span> off on any product!</p>
+            <input type="text" name="E-Mail" placeholder="Enter your e-mail">
+            <button type="button" class="btn btn-danger">SUBSCIBE</button>
+            <div class="checkbox">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Don’t show this popup again.
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -539,86 +567,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      new Splide('.banner-splide', {
-        gap: '15px',
-      }).mount();
-
-      new Splide('.products', {
-        type: 'loop',
-        perPage: 4,
-        perMove: 1,
-        pagination: false,
-        gap: '2rem',
-        breakpoints: {
-          '1200': {
-            perPage: 3,
-            gap: '1rem',
-          },
-          '991': {
-            perPage: 2,
-            gap: '1rem',
-          },
-          '480': {
-            perPage: 1,
-          },
-        }
-      }).mount();
-
-      new Splide('.bestseller', {
-        type: 'loop',
-        perPage: 5,
-        perMove: 1,
-        pagination: false,
-        gap: '2rem',
-        breakpoints: {
-          '1200': {
-            perPage: 4,
-            gap: '1rem',
-          },
-          '991': {
-            perPage: 3,
-            gap: '1rem',
-          },
-          '480': {
-            perPage: 1,
-          },
-        }
-      }).mount();
-
-      new Splide('.brands', {
-        type: 'loop',
-        perPage: 6,
-        perMove: 1,
-        pagination: false,
-        gap: '3rem',
-        padding: {
-          left: '3rem',
-          right: '3rem',
-        },
-        breakpoints: {
-          '991': {
-            perPage: 4,
-            gap: '3rem',
-          },
-          '768': {
-            perPage: 3,
-            gap: '3.5rem',
-          },
-          '480': {
-            perPage: 1,
-          },
-        }
-      }).mount();
-
-
-    });
-
-
-  </script>
-
+  <script src="js/index.js"></script>
 </body>
 
 </html>

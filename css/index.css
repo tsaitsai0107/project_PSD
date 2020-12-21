@@ -884,7 +884,7 @@ img {
 
 .modal-body {
   padding: 16px 40px;
-  background-image: url(/images/popup-chair.png);
+  background-image: url(../images/popup-chair.png);
   background-repeat: no-repeat;
   background-position: right;
 }

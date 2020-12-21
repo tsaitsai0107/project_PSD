@@ -525,6 +525,15 @@ img {
   transform: translateY(-200%);
 }
 
+#featured .products .splide__slide:hover a {
+  opacity: 0.2;
+  text-decoration: none;
+}
+
+#featured .products .splide__slide:hover div {
+  opacity: 0.7;
+}
+
 /* tri-products */
 #tri-products {
   margin-top: 72px;
@@ -615,11 +624,13 @@ img {
 
 #bestseller .product-details {
   position: absolute;
-  bottom: 0;
+  bottom: 24px;
+  left: 7%;
   opacity: 0;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   transition: all 0.2s linear 0s;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 #bestseller .product:hover .product-img {
@@ -637,30 +648,28 @@ img {
 }
 
 #bestseller .products button {
-  padding: 12px 10px;
+  padding: 12px 20px;
   display: block;
   background-color: #ffffff;
-  border: 0.8px solid #c8c8c8;
   color: #8a8a8a;
-  font-size: 14px;
+  border: none;
 }
 
-#bestseller .product-details a {
-  color: #8a8a8a;
+#bestseller .products button.heart {
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+}
+
+#bestseller .products button:focus {
+  outline: none;
 }
 
 #bestseller .product-details i {
-  font-size: 22px;
+  font-size: 20px;
 }
 
-#bestseller .product-details img {
-  width: 20%;
-  opacity: 0.7;
-}
-
-#bestseller .product-details .btn-heart {
-  border-left: none;
-  border-right: none;
+.icon-red {
+  color: #f46060;
 }
 
 /* brands-logo */

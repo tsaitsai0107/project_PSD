@@ -44,6 +44,11 @@ img {
   width: 100%;
 }
 
+a:hover {
+  color: transparent;
+  text-decoration: none;
+}
+
 /* navigation */
 .navigation {
   margin-right: 45px;
@@ -782,11 +787,11 @@ p,
   }
 
   .dropdown-menu-big ul {
-    display: none;
+    /* display: none; */
   }
 
   .dropdown-menu-big .title:hover ~ ul {
-    display: block;
+    /* display: block; */
   }
 
   .dropdown-search .search-container {

@@ -555,7 +555,7 @@ img {
   position: absolute;
   bottom: 24px;
   left: 5%;
-  /* opacity: 0; */
+  opacity: 0;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   transition: all 0.2s linear 0s;

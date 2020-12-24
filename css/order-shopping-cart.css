@@ -413,65 +413,75 @@ img {
 }
 
 /* .product */
-.product {
+.products {
   margin-top: 152px;
 }
 
-.product .title-list {
+.products .title-list {
   padding-bottom: 12px;
   border-bottom: 2px solid #eeeeee;
 }
 
-.product .title-list h5 {
+.products .title-list h5 {
   font-size: 16px;
   color: #808080;
   font-family: semiBoldFont, serif;
 }
 
-.product .shopping-list {
+.products .shopping-list {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 2px solid #eeeeee;
 }
 
-.product .shopping-list .product-name,
-.product .shopping-list .price,
-.product .shopping-list .quantity,
-.product .shopping-list .total,
-.product .shopping-list .delete {
+.products .shopping-list .product-name,
+.products .shopping-list .price,
+.products .shopping-list .quantity,
+.products .shopping-list .total,
+.products .shopping-list .delete {
   display: flex;
   align-items: center;
 }
 
-.product .shopping-list img {
+.products .shopping-list img {
   margin-right: 66px;
 }
 
-.product .shopping-list .product-name {
+.products .shopping-list .product-name a {
   font-size: 18px;
   color: #757575;
   font-family: semiBoldFont, serif;
 }
 
-.product .shopping-list .price,
-.product .shopping-list .total {
+.products .shopping-list .price a,
+.products .shopping-list .total {
   font-size: 18px;
   color: #010101;
   font-family: semiBoldFont, serif;
 }
 
-.product .shopping-list .price i,
-.product .shopping-list .total i {
+.products .shopping-list .price i,
+.products .shopping-list .total i {
   font-size: 14px;
 }
 
-.product .shopping-list .delete button {
+.products .shopping-list .quantity select {
+  padding: 8px 16px;
+  background-color: #eeeeee;
+  width: 40%;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.products .shopping-list .delete button {
   color: #f05c5c;
   background-color: #fff;
   border: none;
 }
 
-.product .shopping-list .delete button:focus {
+.products .shopping-list .delete button:focus {
   outline-color: #eeeeee;
 }
 

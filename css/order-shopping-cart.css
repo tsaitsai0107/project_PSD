@@ -597,6 +597,10 @@ img {
   border: none;
 }
 
+.cart-form button a {
+  color: #fff;
+}
+
 /* footer-top */
 #footer-top {
   margin-top: 108px;
@@ -860,6 +864,7 @@ p,
 }
 
 @media (max-width: 767px) {
+
   .dropdown-shopping-cart .name,
   .dropdown-shopping-cart .qty,
   .dropdown-shopping-cart .total .title,
@@ -879,6 +884,7 @@ p,
 }
 
 @media (max-width: 575px) {
+
   .dropdown-shopping-cart .name,
   .dropdown-shopping-cart .qty,
   .dropdown-shopping-cart .total .title,
